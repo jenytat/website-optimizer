@@ -10,6 +10,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/vendor.css">
@@ -23,7 +24,11 @@
         <div class="header__logo"><img src="./images/icon/logo.png" alt="logo">
           <p>SEO Специалист <span>Оптимизатор сайтов</span></p>
         </div>
-        <div class="header__contact"><a class="header__phone" href="tel:+79263936068"><img src="./images/icon/phone.png" alt="phone"><span>8 926 393 60 68</span></a><a href="viber://chat?number=79263936068"><img src="./images/icon/viber.png" alt="viber"></a><a href="https://api.whatsapp.com/send?phone=79263936068"><img src="./images/icon/whatsapp.png" alt="whatsapp"></a><a class="popup-up" href="#0">Заказать звонок</a></div>
+        <div class="header__contact">
+          <div><a class="header__phone" href="tel:+79263936068"><img src="./images/icon/phone.png" alt="phone"><span>8 926 393 60 68</span></a></div>
+          <div class="header__sosial"><a href="viber://chat?number=79263936068"><img src="./images/icon/viber.png" alt="viber"></a><a href="https://api.whatsapp.com/send?phone=79263936068"><img src="./images/icon/whatsapp.png" alt="whatsapp"></a></div>
+          <div class="header__call"><a class="popup-up" href="#0">Заказать звонок</a></div>
+        </div>
         <div class="header__email"><a href="mailto:89263936068@mail.ru"><img src="./images/icon/mail.png" alt="mail"><span>89263936068@mail.ru</span></a><a class="popup-free" href="#0">Заказать консультацию</a></div>
       </div>
       <p class="header__text">Я частный специалист по раскрутке и продвижению сайтов в поисковых системах.<span>Опыт оптимизации и продвижения сайов более 10 лет. Поисковое SEO в Яндекс и Гугл. </span></p>
@@ -35,6 +40,7 @@
           <label for="checkbox">
             <div class="menu__mobile_icon"></div>
           </label>
+          <div class="menu__text-menu">МЕНЮ</div>
           <div class="menu__list">
             <ul class="menu__list_items">
               <li><a href="#">Раскрутка сайта</a></li>
@@ -47,11 +53,11 @@
           </div>
         </div>
         <ul class="menu__main">
-          <li class="menu__main_item"><a class="menu__main_link" href="#"><img src="./images/icon/item-1.png" alt="gear">Раскрутка сайта</a></li>
+          <li class="menu__main_item"><a class="menu__main_link" href="#description"><img src="./images/icon/item-1.png" alt="gear">Раскрутка сайта</a></li>
           <li class="menu__main_item"><a class="menu__main_link" href="#"><img src="./images/icon/item-2.png" alt="page">Контекстная реклама</a></li>
           <li class="menu__main_item"><a class="menu__main_link" href="#"><img src="./images/icon/item-3.png" alt="desktop">Создание сайтов</a></li>
-          <li class="menu__main_item"><a class="menu__main_link" href="#"><img src="./images/icon/item-4.png" alt="example">Примеры продвижения</a></li>
-          <li class="menu__main_item"><a class="menu__main_link" href="#"><img src="./images/icon/item-5.png" alt="purse">Цены на услуги</a></li>
+          <li class="menu__main_item"><a class="menu__main_link" href="#example"><img src="./images/icon/item-4.png" alt="example">Примеры продвижения</a></li>
+          <li class="menu__main_item"><a class="menu__main_link" href="#service"><img src="./images/icon/item-5.png" alt="purse">Цены на услуги</a></li>
           <li class="menu__main_item"><a class="menu__main_link menu-active__link" href="#"><img src="./images/icon/item-6.png" alt="sale">Скидка - 50%</a></li>
         </ul>
       </div>
@@ -85,15 +91,10 @@
               <div class="slider__image"><img src="./images/decor/slider-3.png" alt="robot"></div>
             </div>
           </div>
-          <ul class="slider__bullets">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
         </div>
       </div>
     </section>
-    <section class="description container">
+    <section class="description container" id="description">
       <div class="description__logo"><img src="./images/icon/logo.png" alt="logo">
         <p>SEO Специалист <span>Оптимизатор сайтов</span></p>
       </div>
@@ -183,7 +184,7 @@
           <div class="result__text">
             <h2>Ваш сайт раскручивают, но нет результата?</h2>
             <h3>У меня есть для Вас уникальное предложение</h3>
-          </div><a href="#">Узнать подробнее</a>
+          </div><a class="result__popup" href="#0">Узнать подробнее</a>
         </div>
       </div>
     </section>
@@ -228,7 +229,7 @@
         </div>
       </div>
     </section>
-    <section class="example">
+    <section class="example" id="example">
       <div class="container">
         <div class="example__title">
           <h2>примеры работ</h2>
@@ -277,7 +278,7 @@
         </div>
       </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
       <div class="container">
         <div class="service__title">
           <h2>услуги и цены</h2>
@@ -285,25 +286,29 @@
         <div class="service__wrap">
           <div class="servise__left slide-in"><img src="./images/decor/service-1.png" alt="hand"></div>
           <div class="service__content">
-            <h3>Продвижение сайтов  </h3>
+            <h3>Продвижение 
+              <p>сайтов  </p>
+            </h3>
             <p>Берем на себя все обязательства по проекту, от планирования кампании и аудита, до реализации конкретных технических заданий.</p>
             <div class="service__price">
               <div class="service__text">
                 <p>от <span>10.000</span>р</p>
                 <p>в месяц</p>
-              </div><a href="#">Заказать</a>
+              </div><a href="#consultation">Заказать</a>
             </div>
           </div>
         </div>
         <div class="service__wrap">
           <div class="service__content">
-            <h3>Контекстная реклама  </h3>
+            <h3>Контекстная 
+              <p>реклама  </p>
+            </h3>
             <p>Берем на себя все обязательства по проекту, от планирования кампании и аудита, до реализации конкретных технических заданий.</p>
             <div class="service__price">
               <div class="service__text">
                 <p>от <span>10.000</span>р </p>
                 <p>от 7 до 14 дней</p>
-              </div><a href="#">Заказать</a>
+              </div><a href="#consultation">Заказать</a>
             </div>
           </div>
           <div class="servise__right slide-in"><img src="./images/decor/service-2.png" alt="google"></div>
@@ -311,40 +316,45 @@
         <div class="service__wrap">
           <div class="servise__left slide-in"><img src="./images/decor/service-3.png" alt="desktop"></div>
           <div class="service__content">
-            <h3>Создание сайтов  </h3>
+            <h3>Создание 
+              <p>сайтов  </p>
+            </h3>
             <p>Берем на себя все обязательства по проекту, от планирования кампании и аудита, до реализации конкретных технических заданий.</p>
             <div class="service__price">
               <div class="service__text">
                 <p>от <span>1.000</span>р </p>
                 <p>от 14 до 30 дней</p>
-              </div><a href="#">Заказать</a>
+              </div><a href="#consultation">Заказать</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="consultation">
+    <section class="consultation" id="consultation">
       <div class="container">
-        <div class="consultation__wrap">
-          <h2>Получить бесплатную консультацию! </h2>
-          <form action="#">
-            <input type="phone" name="phone" placeholder="Телефон">
-            <input type="text" name="name" placeholder="Ваше имя">
-            <input type="text" name="email" placeholder="Email">
-            <div class="consultation__arrow">
-              <select name="service">
-                <option selected="selected">Выбор услуги</option>
-                <option value="1">Услуга 1</option>
-                <option value="2">Услуга 2</option>
-                <option value="3">Услуга 3</option>
-              </select>
-            </div>
-            <textarea name="comment" cols="30" rows="10" placeholder="Комментарий" spellcheck="false"></textarea>
-            <label>
-              <input type="checkbox" name="checkbox"><span class="consultation__checkbox"> </span>Согласен(а) на обработку персональных данных
-            </label>
-            <input type="submit" value="Отправить">
-          </form>
+        <div class="consultation__container">
+          <div class="consultation__wrap">
+            <h2>Получить бесплатную консультацию! </h2>
+            <form action="#">
+              <input type="phone" name="phone" placeholder="Телефон">
+              <input type="text" name="name" placeholder="Ваше имя">
+              <input type="text" name="email" placeholder="Email">
+              <div class="consultation__arrow">
+                <select name="service">
+                  <option selected="selected">Выбор услуги</option>
+                  <option value="1">Услуга 1</option>
+                  <option value="2">Услуга 2</option>
+                  <option value="3">Услуга 3</option>
+                </select>
+              </div>
+              <textarea name="comment" cols="30" rows="10" placeholder="Комментарий" spellcheck="false"></textarea>
+              <label>
+                <input type="checkbox" name="checkbox"><span class="consultation__checkbox"> </span>Согласен(а) на обработку персональных данных
+              </label>
+              <input type="submit" value="Отправить">
+            </form>
+          </div>
+          <div class="consultation__image"><img src="./images/decor/form.png" alt="robol"></div>
         </div>
       </div>
     </section>
@@ -400,7 +410,11 @@
           <div class="footer__logo"><img src="./images/icon/logo-foter.png" alt="logo">
             <p>SEO Специалист <span>Оптимизатор сайтов</span></p>
           </div>
-          <div class="footer__contact"><a class="footer__phone" href="tel:+79263936068"><img src="./images/icon/phone.png" alt="phone"><span>8 926 393 60 68</span></a><a href="viber://chat?number=79263936068"><img src="./images/icon/viber.png" alt="viber"></a><a href="https://api.whatsapp.com/send?phone=79263936068"><img src="./images/icon/whatsapp.png" alt="whatsapp"></a><a class="popup-up" href="#0">Заказать звонок</a></div>
+          <div class="footer__contact">
+            <div><a class="footer__phone" href="tel:+79263936068"><img src="./images/icon/phone.png" alt="phone"><span>8 926 393 60 68</span></a></div>
+            <div class="footer__sosial"><a href="viber://chat?number=79263936068"><img src="./images/icon/viber.png" alt="viber"></a><a href="https://api.whatsapp.com/send?phone=79263936068"><img src="./images/icon/whatsapp.png" alt="whatsapp"></a></div>
+            <div class="footer__call"><a class="popup-up" href="#0">Заказать звонок</a></div>
+          </div>
           <div class="footer__email"><a href="mailto:89263936068@mail.ru"><img src="./images/icon/mail.png" alt="mail"><span>89263936068@mail.ru</span></a><a class="popup-free" href="#0">Заказать консультацию</a></div>
         </div>
         <div class="footer__text">
@@ -437,6 +451,22 @@
             </select>
           </div>
           <textarea name="comment" cols="30" rows="10" placeholder="Комментарий" spellcheck="false"></textarea>
+          <label>
+            <input type="checkbox" name="checkbox"><span class="consultation__checkbox mobile__checkbox"> </span>Согласен(а) на обработку персональных данных
+          </label>
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+    <div class="popup-result">
+      <div class="popup-result__wrap"><a class="popup-close" href="#0"></a>
+        <h2>Получить бесплатную консультацию! </h2>
+        <form action="#">
+          <input type="phone" name="phone" placeholder="Телефон">
+          <input type="text" name="name" placeholder="Ваше имя">
+          <input type="text" name="email" placeholder="Email">
+          <input type="text" name="site" placeholder="Адрес Вашего сайта">
+          <input type="text" name="price" placeholder="Бюджет">
           <label>
             <input type="checkbox" name="checkbox"><span class="consultation__checkbox mobile__checkbox"> </span>Согласен(а) на обработку персональных данных
           </label>
